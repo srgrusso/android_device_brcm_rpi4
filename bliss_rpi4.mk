@@ -21,14 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # before including common overlay
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
-TARGET_BOOTANIMATION_SIZE := 720p
+TARGET_BOOT_ANIMATION_RES := 720
 
-$(call inherit-product, vendor/omni/config/common_tablet.mk)
+$(call inherit-product, vendor/bliss/config/common_full_tablet_wifionly.mk)
 $(call inherit-product, device/brcm/rpi4/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rpi4
-PRODUCT_NAME := omni_rpi4
+PRODUCT_NAME := bliss_rpi4
 PRODUCT_BRAND := Raspberry
 PRODUCT_MODEL := Pi 4
 PRODUCT_MANUFACTURER := Raspberry

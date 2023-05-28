@@ -206,18 +206,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.rpi4
 
-PRODUCT_PACKAGES += \
-    OmniProvision \
-    DeviceParts \
-    Terminal
+#PRODUCT_PACKAGES += \
+#    OmniProvision \
+#    DeviceParts \
+#    Terminal
 
-ifeq ($(ROM_BUILDTYPE),GAPPS)
-PRODUCT_PACKAGES += \
-    DeviceRegistration
-endif
+#ifeq ($(ROM_BUILDTYPE),GAPPS)
+#PRODUCT_PACKAGES += \
+#    DeviceRegistration
+#endif
 
-PRODUCT_PACKAGES += \
-    RemovePackages
+#PRODUCT_PACKAGES += \
+#    RemovePackages
 
 PRODUCT_PACKAGES += \
     gpiodetect \

@@ -14,7 +14,7 @@
 
 soong_namespace {
     imports: [
-        "vendor/omni/build/soong",
+        "vendor/bliss/build/soong",
     ],
 }
 
